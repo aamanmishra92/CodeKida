@@ -1,0 +1,88 @@
+
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container-fluid my-0">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+     <img src="https://source.unsplash.com/1400x400/?telephone" class="d-block w-100" alt="...">
+  </div>
+</div>
+</div>
+
+<h1 class="text-center">Contect Us</h1>
+
+
+<div class="container">
+
+  <form class="row g-3 needs-validation" method="post" action="/contact">
+{% csrf_token %}
+
+  <div class="col-md-4">
+    <label for="name" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+
+ <div class="col-md-4">
+    <label for="lastname" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="lastname" name="lastname" required>
+ </div>
+
+ <div class="col-md-4">
+    <label for="email" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="email" name="email" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-6">
+    <label for="phone" class="form-label">Mobile number</label>
+    <input type="phone" class="form-control" id="phone" name="phone" required>
+</div>
+
+  <div class="col-md-4">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" name="city" value="Mark" required>
+ </div>
+
+  <div class="col-md-3">
+    <label for="state" class="form-label">State</label>
+    <select class="form-select" id="state" name="state" required>
+       <option>Utter Pradesh</option>
+      <option>Madhya Pradesh</option>
+       <option>Banguluru</option>
+       <option>Karnataka</option>
+       <option>Orisha</option>
+       <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+
+ <div class="col-md-4">
+    <label for="zip" class="form-label">Postal Code</label>
+    <input type="phone" class="form-control" id="zip" name="zip" required>
+ </div>
+
+<div class="mb-3">
+  <label for="desc" class="form-label">Any Suggations</label>
+  <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+</div>
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+  <br>
+  <br>
+  <br>
+  </div>
+
+{% endblock body %}

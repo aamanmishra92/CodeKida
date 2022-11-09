@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% block title %}C{% endblock title %}
+
+{% block body %}
+<html>
+<head>
+    <style>
+.gogo1{
+border: 5px outset #E6E6FA ;
+  background-color: Gainsboro;
+  text-align:center;
+  font-size: 25px;
+
+}
+.gogo2{
+border: 5px outset #E6E6FA ;
+  background-color: Gainsboro;
+  font-size:20px;
+
+}
+.gogo3{
+  text-align:center;
+    font-size: 25px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+ hr {
+          border: 10px solid #040404;
+  border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+<div class="mega my-4">
+<h1><center><b><u>General structure of C Program</u></b></center></h1
+</div>
+<br>
+<div>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> The structure</b> of c program contains yhe following sections &nbsp;:</p>
+</div>
+
+<div class="container my-3 px-5">
+    <ul>
+        <li>
+            Docement section
+        </li>
+        <li>
+            Pre Processor section
+        </li>
+        <li>
+            Global section
+        </li>
+        <li>
+            Main() section
+        </li>
+        <li>
+            User define section
+        </li>
+    </ul>
+</div>
+
+<div class="mega my-4 px-3">
+<h3><b>1).<u>&nbsp;Document section</u></b></h3
+</div>
+<div class="gogo px-4">
+    <p>&nbsp; This section is related to user comment section.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+<div class="gogo px-3">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<b><u>&nbsp;Comments&nbsp;:</u></b>&nbsp; Comments are remark statement of a program that is used to describe the objective of program function or any statement. A good programmer always uses  comments for better understanding of coad.</p>
+ <b>There are two type of comments&nbsp;:</b><br><br>
+    <p><b>1)<u>Single line comments&nbsp;:</u></b> &nbsp;&nbsp;For single line comments with the help of "//" before a single line.</p>
+    <div class="gogo1 px-4 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;// This is single line comment.
+   </pre>
+</div>
+    <p><b>1)<u>Multiline comments&nbsp;:</u></b> &nbsp;&nbsp;For multiline comments with the help of "/*&nbsp;-----*/" before a and after the multiple line.</p>
+    <div class="gogo1 px-4 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;/* This is multiline comment.*/
+   </pre>
+</div>
+</div>
+    <div class="mega my-4 px-3">
+<h3><b>2).<u>&nbsp;Pre-processor section</u></b></h3>
+</div>
+<div class="gogo px-3">
+    <p><b> Pre-processor section<</b> is a section where number of header files are included , basicaly it helps to link some files with C program.
+    <br>
+    <p><b>Header file&nbsp;:</b>&nbsp;&nbsp; The header files is collection of files and functions that are frequently used be C programs.
+    </p><br>
+    <p>Every header files have some extension name.</p>
+</div>
+
+
+<div class="gogo1 px-4 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;#include "header file with extension"
+   </pre>
+</div>
+
+    <div class="mega my-4 px-3">
+<h3><b>3).<u>&nbsp;Global section</u></b></h3>
+</div>
+<div class="gogo px-3">
+<p> This section is helpful to declare some variable which can access in all over program.&nbsp;Basically before main Function we can declare different global variable we can access those variable in all over program. </p>
+</div>
+    <div class="mega my-4 px-3">
+<h3><b>4).<u>&nbsp;Main() section</u></b></h3>
+</div>
+    <div class="gogo px-3">
+<p>
+    All the C language codes are written within this section. This section contain two parts &nbsp;:<br>
+    <b>a) Declaration part-</b>&nbsp;&nbsp;For declare variable.<br>
+    <b>b) Execution part-</b>&nbsp;&nbsp;All statement written between {-----} these braces are executed by C compiler.
+</p>
+</div>
+    <div class="mega my-4 px-3">
+<h3><b>5).<u>&nbsp;User define section</u></b></h3>
+</div>
+<div class="gogo px-3">
+    Users can add number of different function with different datatype , user called some function number of times in main() function.
+</div><br>
+
+<h2><center><i><u>Example of general structure of C program:</u></i></center></h2>
+<div class="gogo2 px-5 my-2">
+   <pre><br>
+<b>// this is comment section.
+    &nbsp;&nbsp;&nbsp;&nbsp;#include "stdio.h"
+       &nbsp;&nbsp;&nbsp;&nbsp; #include "stdio.h"&nbsp;&nbsp;// header files.
+       &nbsp;&nbsp;&nbsp;&nbsp; void fun();&nbsp;&nbsp;This Global section.
+        &nbsp;&nbsp;&nbsp;&nbsp; int a=10;
+        &nbsp;&nbsp;&nbsp;&nbsp;void main()&nbsp;&nbsp;&nbsp;//This is main section.
+     &nbsp;&nbsp;&nbsp;&nbsp; {
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;int b=28;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("value of a=%d",a);
+        &nbsp;&nbsp;&nbsp;&nbsp; fun();
+         &nbsp;&nbsp;&nbsp;&nbsp;printf("value of b=%d",b);
+       &nbsp;&nbsp;&nbsp;&nbsp; void fun()&nbsp;&nbsp;//This is user define section.
+        &nbsp; &nbsp; &nbsp; &nbsp; printf("Gogo bhaiya amar rahen");
+       &nbsp; &nbsp; &nbsp; &nbsp; }
+</b>
+   </pre>
+</div>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/c" class="previous">&laquo; Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/c2" class="next">Next &raquo;</a>
+
+<br>
+<hr />
+<br>
+
+<div class="gogo3 my-3 px-5">
+<a href="/c1">Structure of C Program</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/c2">Character Set in C</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Tokens </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Control Statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    <a href="#">control and break statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">loop in C programming </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="#">Function </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="#">exit() function </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">goto statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+</body>
+</html>
+{% endblock body %}

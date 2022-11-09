@@ -1,0 +1,541 @@
+{% extends 'base.html' %}
+{% block title %}C{% endblock title %}
+
+{% block body %}
+
+<html lang="en">
+<head>
+   <style>
+   .gogo1{
+border: 5px outset #E6E6FA ;
+  background-color: Gainsboro;
+  text-align:center;
+  font-size: 25px;
+
+}
+.center{
+font-size:25px;
+}
+
+.gogo3{
+  text-align:center;
+    font-size: 25px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+ hr {
+          border: 10px solid #040404;
+  border-radius: 5px;
+      }
+   </style>
+</head>
+<body>
+
+<div class="mega my-4">
+<h1><center><b><u>Tokens in C</u></b></center></h1>
+</div>
+<div class="gogo px-3 my-4">
+<p>
+    The smallest individual unit of a C program are known as <b>"tokens"</b>. We can code C program using these tokens and it's Syntax rule.<br>
+</p>
+</div>
+    <h2><i><u>Tokens can be:</u></i></h2><br>
+<div class="gogo px-5 my-4">
+<ul>
+    <li>
+        Keywords
+    </li>
+    <br>
+    <li>
+       Identifiers
+    </li><br>
+    <li>
+       Operators
+    </li><br>
+    <li>
+        Datatypes
+    </li><br>
+    <li>
+        Specials symbols.
+    </li>
+    <br>
+    <li>
+       Constants
+    </li>
+</ul>
+    </div>
+    <br>
+
+    <h2><i><u>Keywords:</u></i></h2><br>
+    <div class="gogo px-3 my-4">
+        <p>
+            There are certain reserve words in C language that are used to perform specific tasks these words are known as <b>"keywords".</b><br>
+            There are 32 keywords in C that are:</p></div>
+<div class="gogo px-5 my-4">
+
+            <table class="center" border="4" bgcolor="grey" align="center" width="90%">
+        <tr>
+            <td>
+                auto
+            </td>
+            <td>
+                break
+            </td>
+            <td>
+                case
+            </td>
+            <td>
+                char
+            </td>
+        </tr>
+        <tr>
+            <td>
+                double
+            </td><td>
+                else
+            </td><td>
+                enum
+            </td><td>
+                do
+            </td>
+        </tr>
+        <tr>
+            <td>
+                float
+            </td>
+            <td>
+                for
+            </td>
+            <td>
+                goto
+            </td>
+            <td>
+                if
+            </td>
+        </tr>
+        <tr>
+            <td>
+                int
+            </td>
+            <td>
+                long
+            </td>
+            <td>
+                register
+            </td>
+            <td>
+                return
+            </td>
+        </tr>
+        <tr>
+            <td>
+                short
+            </td>
+            <td>
+                signed
+            </td>
+            <td>
+                sizeof
+            </td>
+            <td>
+                static
+            </td>
+        </tr>
+        <tr>
+            <td>
+                struct
+            </td>
+            <td>
+                switch
+            </td>
+            <td>
+                typeof
+            </td>
+            <td>
+                union
+            </td>
+        </tr>
+        <tr>
+            <td>
+                unsigned
+            </td>
+            <td>
+                void
+            </td>
+            <td>
+                volatile
+            </td>
+            <td>
+                while
+            </td>
+        </tr>
+    </table>
+
+     </div>
+
+   <h2><i><u>Keywords:</u></i></h2><br>
+<div class="gogo px-3 my-4">
+    <p>
+        C identifiers represent the name in the C program, for example, variables, functions, arrays, structures, unions, labels, etc. An identifier can be composed of letters such as uppercase, lowercase letters, underscore, digits, but the starting letter should be either an alphabet or an underscore. If the identifier is not used in the external linkage, then it is called as an internal identifier. If the identifier is used in the external linkage, then it is called as an external identifier.
+<br><br>
+We can say that an identifier is a collection of alphanumeric characters that begins either with an alphabetical character or an underscore, which are used to represent various programming elements such as variables, functions, arrays, structures, unions, labels, etc. There are 52 alphabetical characters (uppercase and lowercase), underscore character, and ten numerical digits (0-9) that represent the identifiers. There is a total of 63 alphanumerical characters that represent the identifiers.
+    </p>
+</div>
+   <h2><i><u>Rules for constructing C identifiers:</u></i></h2><br>
+
+<div class="gogo px-5 my-4">
+    <ul>
+        <li>
+    The first character of an identifier should be either an alphabet or an underscore, and then it can be followed by any of the character, digit, or underscore.
+        </li>
+        <br>
+        <li>
+    It should not begin with any numerical digit.
+        </li>
+        <br>
+        <li>
+    In identifiers, both uppercase and lowercase letters are distinct. Therefore, we can say that identifiers are case sensitive.
+        </li>
+        <br>
+        <li>
+    Commas or blank spaces cannot be specified within an identifier.
+        </li>
+        <br>
+        <li>
+            Keywords cannot be represented as an identifier.
+        </li>
+        <br>
+        <li>
+       The length of the identifiers should not be more than 31 characters.
+        </li>
+        <br>
+        <li>
+       Identifiers should be written in such a way that it is meaningful, short, and easy to read.
+       </li>
+    </ul>
+</div>
+
+    <div class="gogo1 px-4 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;total, sum, average, _m _, sum_1, etc.
+   </pre>
+</div>
+  <h2><i><u>Example of invalid identifiers:</u></i></h2><br>
+
+    <div class="gogo1 px-5 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;2sum (starts with a numerical digit)
+int (reserved word)
+char (reserved word)
+m+n (special character, i.e., '+')
+
+   </pre>
+</div>
+
+<h2><i><u>Type of identifiers:</u></i></h2><br>
+<div class="gogo px-5 my-4">
+    <ul>
+        <li>
+           Internal identifier
+        </li>
+        <br>
+        <li>
+            external identifier
+        </li>
+    </ul>
+</div>
+<h4><ul>Internal identifier: </ul> </h4>
+<div class="gogo px-5 my-4">
+<p>
+    If the identifier is not used in the external linkage, then it is known as an internal identifier. The internal identifiers can be local variables.
+</p>
+    </div>
+<h4><ul>External identifier: </ul> </h4>
+<div class="gogo px-5 my-4">
+
+<p>
+    If the identifier is used in the external linkage, then it is known as an external identifier. The external identifiers can be function names, global variables.
+</p>
+</div>
+
+<h2><i><u> C Operators:</u></i></h2><br>
+<div class="gogo px-3 my-4">
+    <p>
+        An operator is simply a symbol that is used to perform operations. There can be many types of operations like arithmetic, logical, bitwise, etc.<br><br>
+
+There are following types of operators to perform different types of operations in C language.
+    </p>
+</div>
+
+<div class="gogo px-5 my-4">
+    <ul>
+        <li>
+                Arithmetic Operators
+        </li><br>
+         <li>
+                     Relational Operators
+        </li>
+        <br>
+         <li>
+               Shift Operators
+        </li>
+        <br>
+         <li>
+                  logical Operators
+        </li>
+        <br>
+         <li>
+                 Bitwise Operators
+        </li>
+        <br>
+         <li>
+                  Ternary or Conditional Operators
+        </li>
+        <br>
+         <li>
+                Assignment Operator
+        </li>
+        <br>
+         <li>
+                  Misc Operator
+        </li>
+    </ul>
+</div>
+
+<h2><i><u> Precedence of Operators in C:</u></i></h2><br>
+<div class="gogo px-3 my-4">
+    <p>
+        The precedence of operator species that which operator will be evaluated first and next. The associativity specifies the operator direction to be evaluated; it may be left to right or right to left.
+<br><br>
+Let's understand the precedence by the example given below:
+    </p>
+</div>
+
+    <div class="gogo1 px-5 my-3">
+   <pre><br>
+<b><u>Example:</u></b>&nbsp;&nbsp;int value=10+20*10;
+   </pre>
+</div>
+
+<div class="gogo px-3 my-4">
+    <p>
+        The value variable will contain 210 because * (multiplicative operator) is evaluated before + (additive operator).
+<br><br>
+The precedence and associativity of C operators is given below:
+    </p>
+</div>
+<div class="gogo px-3 my-4">
+<table border="2" width="100%">
+    <tr bgcolor="green">
+        <td>
+             <b>Category</b>
+        </td>
+        <td width="40%">
+           <b>  Operator</b>
+        </td>
+        <td>
+              <b>	Associativity</b>
+        </td>
+    </tr>
+            <td>
+             <b>Postfix	</b>
+        </td>
+        <td width="40%">
+           <b>  	() [] -> . ++ - -</b>
+        </td>
+        <td>
+              <b>		Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Unary</b>
+        </td>
+        <td width="40%">
+           <b> 	+ - ! ~ ++ - - (type)* & sizeof </b>
+        </td>
+        <td>
+              <b>	Right to left</b>
+        </td>
+    </tr>
+            <td>
+             <b>Multiplicative</b>
+        </td>
+        <td width="40%">
+           <b>  	* / %</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Additive</b>
+        </td>
+        <td width="40%">
+           <b>  	+ -</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Shift</b>
+        </td>
+        <td width="40%">
+           <b>  << >></b>
+        </td>
+        <td>
+              <b>Left to right	</b>
+        </td>
+    </tr>
+            <td>
+             <b>Relational</b>
+        </td>
+        <td width="40%">
+           <b> 	< <= > >=</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Equality</b>
+        </td>
+        <td width="40%">
+           <b>  == !=</b>
+        </td>
+        <td>
+              <b>Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Bitwise AND</b>
+        </td>
+        <td width="40%">
+           <b> &</b>
+        </td>
+        <td>
+              <b>		Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Bitwise XOR</b>
+        </td>
+        <td width="40%">
+           <b>  ^</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Bitwise OR</b>
+        </td>
+        <td width="40%">
+           <b> |</b>
+        </td>
+        <td>
+              <b>	Logical AND</b>
+        </td>
+    </tr>
+            <td>
+             <b>Category</b>
+        </td>
+        <td width="40%">
+           <b>  &&</b>
+        </td>
+        <td>
+              <b>Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Logical OR</b>
+        </td>
+        <td width="40%">
+           <b>  ||</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+            <td>
+             <b>Conditional</b>
+        </td>
+        <td width="40%">
+           <b>  	?:</b>
+        </td>
+        <td>
+              <b>	Right to left</b>
+        </td>
+    </tr>
+            <td>
+             <b>Assignment</b>
+        </td>
+        <td width="40%">
+           <b>  = += -= *= /= %=>>= <<= &= ^= |=</b>
+        </td>
+        <td>
+              <b>	Right to left</b>
+        </td>
+    </tr>
+            <td>
+             <b>Comma</b>
+        </td>
+        <td width="40%">
+           <b> ,</b>
+        </td>
+        <td>
+              <b>	Left to right</b>
+        </td>
+    </tr>
+</table>
+</div>
+
+
+
+
+
+
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/c1" class="previous">&laquo; Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/c3" class="next">Next &raquo;</a>
+
+<br>
+<hr />
+<br>
+
+<div class="gogo3 my-3 px-5">
+<a href="/c1">Structure of C Program</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/c2">Character Set in C</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/c3">Tokens </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Control Statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    <a href="#">control and break statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">loop in C programming </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="#">Function </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="#">exit() function </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">goto statement </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</body>
+</html>
+
+{% endblock body %}
